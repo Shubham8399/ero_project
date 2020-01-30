@@ -62,7 +62,8 @@ class ConfigurationRepository
 
     public function getConfig()
     {
-        if (!\Storage::exists('.app_installed')) {
+        if (!\Storage::exists('.app_installed'))
+        {
            $config['failed_install'] = 1;
            return  $config;
         }
@@ -355,7 +356,7 @@ class ConfigurationRepository
      * @return null
      */
     public function setDefault()
-    {    
+    {
         $system_variables = getVar('system');
         $role_and_permission_variables = getVar('role_and_permission');
         config(['system' => $system_variables + $role_and_permission_variables]);
@@ -363,7 +364,7 @@ class ConfigurationRepository
         foreach ($default_config as $key => $value) {
             config(['config.'.$key => $value]);
         }
-        
+
         if (!\Storage::exists('.app_installed')) {
             return false;
         }
@@ -383,7 +384,7 @@ class ConfigurationRepository
                     'config.user_color_theme' => $user_preference->color_theme
                 ]);
             }
-            
+
             $default_academic_session = ($user_preference) ? $this->academic_session->find($user_preference->academic_session_id) : $this->academic_session->whereIsDefault(1)->first();
             if ($default_academic_session) {
                 $default_academic_session->start_date = toDate($default_academic_session->start_date);
@@ -408,13 +409,13 @@ class ConfigurationRepository
         ]);
         config([
             'paypal.client_id' => config('config.paypal_client_id'),
-            'paypal.secret' => config('config.paypal_client_secret'), 
+            'paypal.secret' => config('config.paypal_client_secret'),
             'paypal.settings.mode' => config('config.paypal_mode') ? 'live' : 'sandbox'
         ]);
         config([
             'jwt.ttl' => config('config.token_lifetime') ? : 120
         ]);
-        
+
         date_default_timezone_set(config('config.timezone') ? : 'Asia/Kolkata');
         \App::setLocale(config('config.locale') ? : 'en');
 

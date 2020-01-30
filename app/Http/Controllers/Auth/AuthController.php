@@ -50,6 +50,7 @@ class AuthController extends Controller
      */
     public function login(LoginRequest $request)
     {
+
         $data = $this->repo->auth($this->request->all());
         return $this->success($data);
     }
@@ -58,9 +59,10 @@ class AuthController extends Controller
      * Used to authenticate user
      * @post ("/api/auth/login/otp")
      * @param ({
-     *      @Parameter("mobile", type="numeric", required="true", description="Mobile of User"),
+     * @Parameter("mobile", type="numeric", required="true", description="Mobile of User"),
      * })
      * @return authentication token
+     * @throws \Illuminate\Validation\ValidationException
      */
     public function otp(OtpRequest $request)
     {

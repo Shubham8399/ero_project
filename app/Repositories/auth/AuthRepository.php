@@ -62,7 +62,6 @@ class AuthRepository
      */
     public function auth($params = array())
     {
-        print_r($params);
       $email_or_username = gv($params, 'email_or_username');
 
         $this->throttle->validate();
@@ -124,14 +123,18 @@ class AuthRepository
         $email_or_username = gv($params, 'email_or_username');
         $password          = gv($params, 'password');
 
-        if (filter_var($email_or_username, FILTER_VALIDATE_EMAIL)) {
+        if (filter_var($email_or_username, FILTER_VALIDATE_EMAIL))
+        {
             $credentials = array('email' => $email_or_username, 'password' => $password);
 
-        } else {
+        }
+        else
+            {
             $credentials = array('username' => $email_or_username, 'password' => $password);
         }
 
-        if (! $token = auth()->attempt($credentials)) {
+        if (! $token = auth()->attempt($credentials))
+        {
             $this->throttle->update();
 
             throw ValidationException::withMessages(['email_or_username' => trans('auth.failed')]);
