@@ -18,7 +18,8 @@ class Controller extends BaseController
 
     public function ok($items = null)
     {
-        return response()->json($items)->setEncodingOptions(JSON_NUMERIC_CHECK);
+
+      return response()->json($items)->setEncodingOptions(JSON_NUMERIC_CHECK);
     }
 
     /**

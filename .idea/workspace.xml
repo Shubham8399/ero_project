@@ -243,20 +243,27 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.PHP" />
   </component>
-  <component name="RunManager" selected="PHP Script.install.php">
+  <component name="RunManager" selected="PHP Script.AuthController.php">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
-    <configuration name="install.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" editBeforeRun="true" temporary="true" path="$PROJECT_DIR$/resources/lang/en/install.php">
-      <method v="2" />
-    </configuration>
+    <list>
+      <item itemvalue="PHP Script.AuthController.php" />
+      <item itemvalue="PHPUnit.phpunit.xml" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="PHP Script.install.php" />
+        <item itemvalue="PHP Script.AuthController.php" />
       </list>
     </recent_temporary>
   </component>
@@ -273,6 +280,7 @@
       <workItem from="1579952253809" duration="906000" />
       <workItem from="1580103175283" duration="3165000" />
       <workItem from="1580219381466" duration="33334000" />
+      <workItem from="1580449815161" duration="7683000" />
     </task>
     <servers />
   </component>
@@ -280,22 +288,30 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579953023374">
+    <state x="402" y="51" key="#AuthController.php" timestamp="1580453470736">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1579953023374" />
-    <state x="414" y="51" key="#install.php" timestamp="1580364076017">
+    <state x="402" y="51" key="#AuthController.php/0.0.1366.728@0.0.1366.728" timestamp="1580453470736" />
+    <state x="509" y="0" key="#PHP" timestamp="1580453441281">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="414" y="51" key="#install.php/0.0.1366.728@0.0.1366.728" timestamp="1580364076017" />
-    <state x="184" y="0" key="SettingsEditor" timestamp="1580293347200">
+    <state x="509" y="0" key="#PHP/0.0.1366.728@0.0.1366.728" timestamp="1580453441281" />
+    <state x="465" y="36" width="673" height="692" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580453446070">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1580293347200" />
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1580219381033">
+    <state x="465" y="36" width="673" height="692" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1580453446070" />
+    <state x="414" y="51" key="#install.php" timestamp="1580453215254">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1580219381033" />
+    <state x="414" y="51" key="#install.php/0.0.1366.728@0.0.1366.728" timestamp="1580453215254" />
+    <state x="184" y="0" key="SettingsEditor" timestamp="1580454339105">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1580454339105" />
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1580449979323">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1580449979323" />
     <state x="339" y="157" key="run.anything.popup" timestamp="1580291693225">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

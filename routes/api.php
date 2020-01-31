@@ -13,7 +13,7 @@
 
 // Guest Routes
 Route::group(['prefix' => 'auth'], function () {
-	//Route::post('/login', 'Auth\AuthController@login');
+	Route::post('/login', 'Auth\AuthController@login');
 	Route::post('/login/otp', 'Auth\AuthController@otp');
 	Route::post('/check', 'Auth\AuthController@check');
 	Route::post('/password', 'Auth\AuthController@password');

@@ -18,18 +18,15 @@ class LoginRequest extends FormRequest
 
     /**
      * Get the validation rules that apply to the request.
-     *
+     *request
      * @return array
      */
     public function rules()
   {
         $rules = [
-            'password' => 'required'
+            'password' => 'required',
+            'email_or_username'=>'required'
         ];
-
-        if (! \Auth::check()) {
-            $rules['email_or_username'] = 'required';
-        }
 
         return $rules;
     }
@@ -46,12 +43,12 @@ class LoginRequest extends FormRequest
             'password' => trans('password')
         ];
     }
-
-    /**
-     * Get the error messages for the defined validation rules.
-     *
-     * @return array
-     */
+//
+//    /**
+//     * Get the error messages for the defined validation rules.
+//     *
+//     * @return array
+//     */
     public function messages()
     {
         return [
