@@ -31,6 +31,7 @@ class Controller extends BaseController
     {
         $data = ['status' => 'success'];
 
+
         if ($items instanceof Arrayable) {
             $items = $items->toArray();
         }

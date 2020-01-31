@@ -77,6 +77,7 @@ class AuthRepository
             $auth_user = $this->user->findByUsername($email_or_username);
         }
 
+
         $this->validateStatus($auth_user);
 
         event(new UserLogin($auth_user));
