@@ -31,10 +31,6 @@ class AuthController extends Controller
     {
         $this->request = $request;
         $this->repo = $repo;
-
-
-
-
         $this->user = $user;
         $this->middleware('prohibited.test.mode')->only('changePassword');
     }
